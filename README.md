@@ -1,16 +1,46 @@
-# React + Vite
+# GestureCAD
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+GestureCAD is a React + Vite application for exploring hand-based interaction and gesture recognition in the browser. It combines webcam-based hand tracking with a lightweight gesture engine to surface diagnostics, event logs, and a 3D hand viewer.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Real-time hand tracking with MediaPipe Tasks Vision
+- Gesture and motion diagnostics such as confidence, FPS, and latency
+- Swipe, pinch, and pose-based event detection
+- Interactive 3D hand visualization
+- GPU/CPU delegate switching for testing performance
 
-## React Compiler
+## Tech Stack
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React 19 + TypeScript
+- Vite
+- Tailwind CSS
+- React Three Fiber / Drei
+- Zustand
+- MediaPipe Tasks Vision
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Install dependencies:
+   ```bash
+   npm install
+   ```
+2. Start the development server:
+   ```bash
+   npm run dev
+   ```
+3. Open the local URL shown by Vite in your browser.
+
+> The app uses your camera, so allow webcam access when prompted.
+
+## Build
+
+```bash
+npm run build
+```
+
+## Lint
+
+```bash
+npm run lint
+```
